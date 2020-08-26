@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#include<iostream>
+int a=0 ,b=7;
+using namespace std;
+int main()
+{
+int t,x,y,X,Y;
+cin>>t;
+while(t--)
+{ 
+int p;
+cin>>p;
+x=p-a;
+y=p-b;
+X=abs(x);
+Y=abs(y);
+ 
+if(X>Y){
+cout<<"B"<<endl;
+b=p;}
+else{
+cout<<"A"<<endl;
+a=p;}
+ 
+}
+return 0;
+}

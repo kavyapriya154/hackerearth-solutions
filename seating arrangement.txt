@@ -1,0 +1,71 @@
+#include<stdio.h>
+int main()
+{
+    int t,n,r;
+    scanf("%d",&t);
+    while(t>0)
+    {
+        scanf("%d",&n);
+        r=n%12;
+        switch(r)
+        {
+            case 0:printf("%d ",n-11);
+                   printf("WS");
+                 printf("\n");
+                   break;
+            case 1:printf("%d ",n+11);
+                  printf("WS");
+                  printf("\n");
+                  break;
+            case 2:printf("%d ",n+9);
+                   printf("MS");
+                   printf("\n");
+                   break;
+
+           case 3:printf("%d ",n+7);
+                   printf("AS");
+                   printf("\n");
+                   break;
+
+            case 4:printf("%d ",n+5);
+                   printf("AS");
+                   printf("\n");
+                   break;
+
+            case 5:printf("%d ",n+3);
+                   printf("MS");
+                   printf("\n");
+                   break;
+
+           case 6:printf("%d ",n+1);
+                   printf("WS");
+                   printf("\n");
+                   break;
+
+           case 7:printf("%d ",n-1);
+                   printf("WS");
+                   printf("\n");
+                   break;
+
+          case 8:printf("%d ",n-3);
+                   printf("MS");
+                   printf("\n");
+                   break;
+          case 9:printf("%d ",n-5);
+                   printf("AS");
+                   printf("\n");
+                   break;
+
+          case 10:printf("%d ",n-7);
+                   printf("AS");
+                   printf("\n");
+                   break;
+          case 11:printf("%d ",n-9);
+                   printf("MS");
+                   printf("\n");
+                   break;
+        }
+          t--;
+    }
+    return 0;
+}

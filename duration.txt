@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int t,SH,SM,EH,EM,S,E,H,K,M;
+	scanf("%d",&t);
+	while(t>0)
+    {
+    	scanf("%d %d %d %d",&SH,&SM,&EH,&EM);
+    	S=SH*60;
+    	E=EH*60;
+    	H=((E+EM)-(S+SM));
+    	K=H/60;
+    	M=H%60;
+        printf("%d %d\n",K,M);
+		t--;
+	}
+	return 0;
+}

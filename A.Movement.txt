@@ -1,0 +1,13 @@
+
+#include<stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int m;
+	m=n/5;
+	if(n%5==0)
+     printf("%d",m);
+	else
+	 printf("%d",(m+1));
+}

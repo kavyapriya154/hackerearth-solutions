@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int t,n,l;
+	scanf("%d",&t);
+	while(t>0)
+	{
+		scanf("%d",&n);
+		l=n;
+		if(l!=1)
+		{
+			if(l%2==0)
+			{
+				l=l/2;
+			}
+			else
+			{
+                l=3*l+1;
+			}
+		}
+        printf("YES\n");
+        t--;
+	}
+	return 0;
+
+}
